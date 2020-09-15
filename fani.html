@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://kit.fontawesome.com/30ae2ed132.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="style.css">  -->
+    <link rel="stylesheet" href="home.css">
+
+
+    <title>Fani | Metais e acessórios</title>
+</head>
+
+<body>
+    <header>
+        <div class="top-site">
+            <div class="flex cont">
+                <div class="redes-sociais">
+                    <a target="_blank" href="https://www.instagram.com/fanimetais"><i class="fa fa-instagram"></i></a>
+                    <a target="_blank" href="https://pt-br.facebook.com/fanimetais"><i class="fa fa-facebook"></i></a>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCrJUR03rU1Z7hXfjCdn_HBA"><i
+                            class="fa fa-youtube-play"></i></a>
+                    <a target="_blank" href="https://br.pinterest.com/metaisfani/"><i class="fa fa-pinterest"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/fanimetais"><i
+                            class="fa fa-linkedin"></i></a>
+                </div>
+                <div class="pesquisa">
+                    <form action="https://www.fani.com.br/busca.php" method="post" id="PesquisarSite">
+                        <input type="text" id="busca" name="busca" placeholder="O que você procura?" required>
+                        <button type="submit" class="pesquisarS"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+                <div class="area-restrita">
+                    <span class="area"><i class="fas fa-user-lock"></i>área restrita</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="menu-desktop cont flex">
+            <div class="logo">
+                <a href="images/logo.png">
+                    <h1><img src="images/logo.png" alt="Fani"></h1>
+                </a>
+            </div>
+            <ul class="listaMenu flex">
+                <li><span class="closeMenu" onclick="closeMenu();">&times;</span></li>
+                <li><a href="https://www.fani.com.br/sobre">Sobre</a></li>
+                <li class="sub-menu"><a href="https://www.fani.com.br/produtos">produtos</a>
+                    <ul class="sub-categoria">
+                        <li class="Lista_sub-subCategoria"><a href="#">Linha</a>
+                            <div style="position:absolute; width: 100%;left: 0px;">
+                                <ul class="sub-sub-categoria"
+                                    style="position:relative; left: auto; width: calc( 100% / 4 ); float:left;">
+                                    <li class="link-sub-sub-open" style="width:100%;">
+                                        <a href="https://www.fani.com.br/produtos/agata-130">Ágata 130 </a>
+                                    </li>
+                                    <li class="link-sub-sub-open" style="width:100%;">
+                                        <a href="https://www.fani.com.br/produtos/atrio-325">Átrio 325 </a>
+                                    </li>
+                                </ul>
+
+                                <ul class="sub-sub-categoria"
+                                    style="position:relative; left: auto; width: calc( 100% / 4 ); float:left;">
+                                    <li class="link-sub-sub-open" style="width:100%;">
+                                        <a href="https://www.fani.com.br/produtos/fanimatic">Fanimatic </a>
+                                    </li>
+                                    <li class="link-sub-sub-open" style="width:100%;">
+                                        <a href="https://www.fani.com.br/produtos/filtros-e-conjuntos">Filtros e
+                                            Conjuntos </a>
+                                    </li>
+                                </ul>
+
+                                <ul class="sub-sub-categoria"
+                                    style="position:relative; left: auto; width: calc( 100% / 4 ); float:left;">
+                                    <li class="link-sub-sub-open" style="width:100%;">
+                                        <a href="https://www.fani.com.br/produtos/mix-500">Mix 500 </a>
+                                    </li>
+                                    <li class="link-sub-sub-open" style="width:100%;">
+                                        <a href="https://www.fani.com.br/produtos/mix-light-550">Mix Light 550 </a>
+                                    </li>
+                                </ul>
+
+                                <ul class="sub-sub-categoria"
+                                    style="position:relative; left: auto; width: calc( 100% / 4 ); float:left;">
+                                    <li class="link-sub-sub-open" style="width:100%;">
+                                        <a href="https://www.fani.com.br/produtos/prata-50">Prata 50 </a>
+                                    </li>
+                                    <li class="link-sub-sub-open" style="width:100%;">
+                                        <a href="https://www.fani.com.br/produtos/prima-210">Prima 210 </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </li>
+                        <li class="Lista_sub-subCategoria"><a href="#">Ambiente</a>
+                            <div style="position:absolute; width: 100%;left: 0px;">
+                                <ul class="sub-sub-categoria"
+                                    style="position:relative; left: auto; width: calc( 100% / 4 ); float:left;">
+                                    <li class="link-sub-sub-open" style="width:100%;">
+                                        <a href="https://www.fani.com.br/produtos/areas-externas">Áreas Externas </a>
+                                    </li>
+                                    <li class="link-sub-sub-open" style="width:100%;">
+                                        <a href="https://www.fani.com.br/produtos/banheiros">Banheiros </a>
+                                    </li>
+                                </ul>
+
+                                <ul class="sub-sub-categoria"
+                                    style="position:relative; left: auto; width: calc( 100% / 4 ); float:left;">
+                                    <li class="link-sub-sub-open" style="width:100%;">
+                                        <a href="https://www.fani.com.br/produtos/cozinhas">Cozinhas </a>
+                                    </li>
+                                </ul>
+
+                                <ul class="sub-sub-categoria"
+                                    style="position:relative; left: auto; width: calc( 100% / 4 ); float:left;">
+                                    <li class="link-sub-sub-open" style="width:100%;">
+                                        <a href="https://www.fani.com.br/produtos/lavabo">Lavabo </a>
+                                    </li>
+                                </ul>
+
+                                <ul class="sub-sub-categoria"
+                                    style="position:relative; left: auto; width: calc( 100% / 4 ); float:left;">
+                                    <li class="link-sub-sub-open" style="width:100%;">
+                                        <a href="https://www.fani.com.br/produtos/lavanderia">Lavanderia </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="Lista_sub-subCategoria"><a href="#">Categoria</a>
+                            <div style="position:absolute; width: 100%;left: 0px;">
+                                <ul class="sub-sub-categoria"
+                                    style="position:relative; left: auto; width: calc( 100% / 4 ); float:left;">
+                                    <li class="link-sub-sub-open" style="width:100%;">
+                                        <a href="https://www.fani.com.br/produtos/acessorios">Acessórios </a>
+                                    </li>
+                                    <li class="link-sub-sub-open" style="width:100%;">
+                                        <a href="https://www.fani.com.br/produtos/areas-externas">Áreas Externas </a>
+                                    </li>
+                                    <li class="link-sub-sub-open" style="width:100%;">
+                                        <a href="https://www.fani.com.br/produtos/bases">Bases </a>
+                                    </li>
+                                </ul>
+
+                                <ul class="sub-sub-categoria"
+                                    style="position:relative; left: auto; width: calc( 100% / 4 ); float:left;">
+                                    <li class="link-sub-sub-open" style="width:100%;">
+                                        <a href="https://www.fani.com.br/produtos/chuveiros-e-desviadores">Chuveiros e
+                                            Desviadores </a>
+                                    </li>
+                                    <li class="link-sub-sub-open" style="width:100%;">
+                                        <a href="https://www.fani.com.br/produtos/componentes">Componentes </a>
+                                    </li>
+                                    <li class="link-sub-sub-open" style="width:100%;">
+                                        <a href="https://www.fani.com.br/produtos/escoamento">Escoamento </a>
+                                    </li>
+                                </ul>
+
+                                <ul class="sub-sub-categoria"
+                                    style="position:relative; left: auto; width: calc( 100% / 4 ); float:left;">
+                                    <li class="link-sub-sub-open" style="width:100%;">
+                                        <a href="https://www.fani.com.br/produtos/filtros-e-conjuntos">Filtros e
+                                            Conjuntos </a>
+                                    </li>
+                                    <li class="link-sub-sub-open" style="width:100%;">
+                                        <a href="https://www.fani.com.br/produtos/metais-banheiro">Metais Banheiro </a>
+                                    </li>
+                                    <li class="link-sub-sub-open" style="width:100%;">
+                                        <a href="https://www.fani.com.br/produtos/metais-cozinha">Metais Cozinha </a>
+                                    </li>
+                                </ul>
+
+                                <ul class="sub-sub-categoria"
+                                    style="position:relative; left: auto; width: calc( 100% / 4 ); float:left;">
+                                    <li class="link-sub-sub-open" style="width:100%;">
+                                        <a href="https://www.fani.com.br/produtos/monocomandos-banheiro">Monocomandos
+                                            Banheiro </a>
+                                    </li>
+                                    <li class="link-sub-sub-open" style="width:100%;">
+                                        <a href="https://www.fani.com.br/produtos/monocomandos-cozinha">Monocomandos
+                                            Cozinha </a>
+                                    </li>
+                                    <li class="link-sub-sub-open" style="width:100%;">
+                                        <a href="https://www.fani.com.br/produtos/solucoes-hidraulicas">Soluções
+                                            Hidráulicas </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </li>
+                        <li class="Lista_sub-subCategoria"><a href="#">Soluções Hidráulicas</a>
+                            <div style="position:absolute; width: 100%;left: 0px;">
+                                <ul class="sub-sub-categoria"
+                                    style="position:relative; left: auto; width: calc( 100% / 4 ); float:left;">
+                                    <li class="link-sub-sub-open" style="width:100%;">
+                                        <a href="https://www.fani.com.br/produtos/acabamentos">Acabamentos </a>
+                                    </li>
+                                    <li class="link-sub-sub-open" style="width:100%;">
+                                        <a href="https://www.fani.com.br/produtos/acessorios-para-gas">Acessórios para
+                                            gás </a>
+                                    </li>
+                                    <li class="link-sub-sub-open" style="width:100%;">
+                                        <a href="https://www.fani.com.br/produtos/acessorios-para-torneiras">Acessórios
+                                            para torneiras </a>
+                                    </li>
+                                </ul>
+
+                                <ul class="sub-sub-categoria"
+                                    style="position:relative; left: auto; width: calc( 100% / 4 ); float:left;">
+                                    <li class="link-sub-sub-open" style="width:100%;">
+                                        <a href="https://www.fani.com.br/produtos/conexoes-para-filtros-agua">Conexões
+                                            para filtros/água </a>
+                                    </li>
+                                    <li class="link-sub-sub-open" style="width:100%;">
+                                        <a href="https://www.fani.com.br/produtos/conversores">Conversores </a>
+                                    </li>
+                                    <li class="link-sub-sub-open" style="width:100%;">
+                                        <a href="https://www.fani.com.br/produtos/economizadores-de-agua">Economizadores
+                                            de água </a>
+                                    </li>
+                                </ul>
+
+                                <ul class="sub-sub-categoria"
+                                    style="position:relative; left: auto; width: calc( 100% / 4 ); float:left;">
+                                    <li class="link-sub-sub-open" style="width:100%;">
+                                        <a href="https://www.fani.com.br/produtos/ligacoes-flexivel">Ligações flexível
+                                        </a>
+                                    </li>
+                                    <li class="link-sub-sub-open" style="width:100%;">
+                                        <a href="https://www.fani.com.br/produtos/misturadores">Misturadores </a>
+                                    </li>
+                                    <li class="link-sub-sub-open" style="width:100%;">
+                                        <a href="https://www.fani.com.br/produtos/mvc">MVC </a>
+                                    </li>
+                                </ul>
+
+                                <ul class="sub-sub-categoria"
+                                    style="position:relative; left: auto; width: calc( 100% / 4 ); float:left;">
+                                    <li class="link-sub-sub-open" style="width:100%;">
+                                        <a href="https://www.fani.com.br/produtos/mvs">MVS </a>
+                                    </li>
+                                    <li class="link-sub-sub-open" style="width:100%;">
+                                        <a href="https://www.fani.com.br/produtos/prolongador">Prolongador </a>
+                                    </li>
+                                    <li class="link-sub-sub-open" style="width:100%;">
+                                        <a href="https://www.fani.com.br/produtos/registro-de-pressao">Registro de
+                                            pressão </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><a href="https://www.fani.com.br/onde-encontrar">onde encontrar</a></li>
+                <li><a href="https://www.fani.com.br/blog">blog</a></li>
+                <li><a href="https://www.fani.com.br/contato">Contato</a></li>
+                <li><a href="https://www.fani.com.br/downloads">Downloads</a></li>
+            </ul>
+        </div>
+        </div>
+    </header>
+
+    <!-- CAROUSEL INICIAL -->
+
+    <div id="carouselSite" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+
+                <img src="images/banheiro.jpg" class="img-fluid d-blockc w-100" alt="">
+
+            </div>
+
+            <div class="carousel-item">
+
+                <img src="images/banheiro2.jpg" class="img-fluid d-blockc w-100" alt="">
+
+            </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#carouselSite" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselSite" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    </div>
+        <div class="cont padding"><br>
+            <h2 class="titulo center">CORES, IDEIAS E POSSIBILIDADES</h2>
+        </div>
+    </div>
+
+
+    <div class="possibilidades">
+
+
+        <div class="box-escolha banheiro flex"
+            style="background-image: url(images/banheiro.jpg);">
+            <div class="conteudoBox">
+                <div class="icone-box"
+                    style="background-image:url(./admin/files/ambientes/4142675d134d9c03277b7e17780dc09cc912ee1.png);">
+                </div>
+                <h3>Banheiros</h3>
+                <a href="https://www.fani.com.br/produtos/banheiros" class="link-box">saiba +</a>
+            </div>
+        </div>
+
+
+
+        <div class="box-escolha cozinha flex"
+            style="background-image: url(images/banheiro2.jpg);">
+            <div class="conteudoBox">
+                <div class="icone-box"
+                    style="background-image:url);">
+                </div>
+                <h3>Cozinhas</h3>
+                <a href="https://www.fani.com.br/produtos/cozinhas" class="link-box">saiba +</a>
+            </div>
+        </div>
+
+
+
+        <div class="box-escolha lavanderia flex"
+            style="background-image: url(images/banheiro.jpg);">
+            <div class="conteudoBox">
+                <div class="icone-box"
+                    style="background-image:url(./admin/files/ambientes/300016361488f86299c3005db8092e47e5fc5af.png);">
+                </div>
+                <h3>Lavanderia</h3>
+                <a href="https://www.fani.com.br/produtos/lavanderia" class="link-box">saiba +</a>
+            </div>
+        </div>
+
+
+
+        <div class="box-escolha areas flex"
+            style="background-image: url(images/banheiro2.jpg);">
+            <div class="conteudoBox">
+                <div class="icone-box"
+                    style="background-image:url(./admin/files/ambientes/5550504437b01c6f54b063be3a5a03769b41605.png);">
+                </div>
+                <h3>Áreas Externas</h3>
+                <a href="https://www.fani.com.br/produtos/areas-externas" class="link-box">saiba +</a>
+            </div>
+        </div>
+
+
+
+        <div class="box-escolha lavabo flex"
+            style="background-image: url(images/banheiro2.jpg);">
+            <div class="conteudoBox">
+                <div class="icone-box"
+                    style="background-image:url(./admin/files/ambientes/335612723b0c56205a9125866d4c21a5880864f.png);">
+                </div>
+                <h3>Lavabo</h3>
+                <a href="https://www.fani.com.br/produtos/lavabo" class="link-box">saiba +</a>
+            </div>
+        </div>
+
+        <div class="conhecaAinda">
+            <div class="cont flex">
+                <h2 class="titulo white">LANÇAMENTOS</h2>
+                <div class="links-page">
+                    <a href="produtos/essence-420">Essence 420</a>
+                    <a href="produtos/essence-420">Essence 420</a>
+                    <a href="https://www.fani.com.br/produtos/produtos-lancamentos" target="_self"><i
+                            class="fa fa-plus"></i></a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- validacao -->
+
+        <section class="padding">
+            <div class="cont inspiracoes">
+                <h2 class="titulo center">PROJETOS INSPIRADORES</h2>
+            </div>
+        </section>
+
+
+        <!-- template -->
+        <div class="projetos">
+            <div class="box-projeto flex">
+                <div class="box-conteudo">
+                    <div>
+                        <h3>Cozinhas</h3>
+                        <span class="modalProjetos" data-idprojeto="2">ver projeto</span>
+                    </div>
+                </div>
+                <div class="box-imagem"
+                    style="background-image: url(images/banheiro.jpg);">
+                </div>
+                <div class="ModalProjeto ModalProjeto_2">
+                    <div class="controleModal">
+                        <span class="fecharModal">&times;</span>
+                        <h2>Cozinhas</h2>
+                        <!-- <h4 style="color:white">Letícia Andrade</h4> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-projeto flex">
+                <div class="box-conteudo">
+                    <div>
+                        <h3>Banheiros</h3>
+                        <span class="modalProjetos" data-idprojeto="3">ver projeto</span>
+                    </div>
+                </div>
+                <div class="box-imagem"
+                    style="background-image: url(images/banheiro2.jpg);">
+                </div>
+                <div class="ModalProjeto ModalProjeto_3">
+                    <div class="controleModal">
+                        <span class="fecharModal">&times;</span>
+                        <h2>Banheiros</h2>
+                        <!-- <h4 style="color:white">Camila Frare</h4> -->
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="box-projeto flex">
+                <div class="box-conteudo">
+                    <div>
+                        <h3>Áreas externas</h3>
+                        <span class="modalProjetos" data-idprojeto="4">ver projeto</span>
+                    </div>
+                </div>
+                <div class="box-imagem"
+                    style="background-image: url(images/banheiro.jpg);">
+                </div>
+                <div class="ModalProjeto ModalProjeto_4">
+                    <div class="controleModal">
+                        <span class="fecharModal">&times;</span>
+                        <h2>Áreas externas</h2>
+                        <!-- <h4 style="color:white"></h4> -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="inspiracao" class="id-menu"></div>
+        <div class="inspiracao" style="background-image: url(images/Banner2.png);">
+            <div class="cont">
+                <div class="box-inspiracao">
+                    <h2 class="titulo center white">INSPIRAÇÕES</h2>
+                    <div class="wrap">
+                        <button class="inspire-se">inspire-se</button>
+                        <button class="envie-seu-projeto">envie seu projeto</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- catalogos -->
+        <div class="catalogo cont padding">
+            <h2 class="titulo center padding">CATÁLOGOS</h2>
+            <div class="ListaCatalogo">
+                <div class="box">
+                    <a href="#" target="_blank">
+                        <div class="img-catalogo"
+                            style="background-image:url(images/banheiro.jpg);">
+                        </div>
+                    </a>
+                    <a href="#" target="_blank" class="ver-car">ver catálogo</a>
+                </div>
+                <div class="box">
+                    <a href="#" target="_blank">
+                        <div class="img-catalogo"
+                            style="background-image:url(images/banheiro2.jpg);">
+                        </div>
+                    </a>
+                    <a href="#" target="_blank"
+                        class="ver-car">ver catálogo</a>
+                </div>
+                <div class="box">
+                    <a href="#"
+                        target="_blank">
+                        <div class="img-catalogo"
+                            style="background-image:url(images/banheiro.jpg);">
+                        </div>
+                    </a>
+                    <a href="#"
+                        target="_blank" class="ver-car">ver catálogo</a>
+                </div>
+                <div class="box">
+                    <a href="#" target="_blank">
+                        <div class="img-catalogo"
+                            style="background-image:url(images/banheiro2.jpg);">
+                        </div>
+                    </a>
+                    <a href="#" target="_blank" class="ver-car">ver catálogo</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="sociaisPost flex ">
+            <div class="box-blog padding">
+                <div class="cont-blog">
+                    <div class="padding">
+                        <h2 class="titulo padding">BLOG</h2>
+                    </div>
+                    <a href="blog/requinte-e-bem-estar-na-decoracao-do-banheiro">
+                        <div class="blog-home">
+                            <div class="img-blog"
+                                style="background-image: url(images/Banner.png);">
+                            </div>
+                            <h3>Detalhes em cores conferem mais requinte e bem-estar na decoração do seu banheiro</h3>
+                            <div class="texto-blog-info">
+                                <p><strong><span style="color: #333399;"><em>Dicas para criar um banheiro com mais
+                                                personalidade a partir de pigmentos sofisticados</em></span></strong>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="box-redes padding">
+                <div class="cont-redes">
+                    <div class="padding">
+                        <h2 class="titulo padding">SIGA - NOS</h2>
+                        <div class="face">
+                            <h3>Facebook /fanimetais</h3>
+                            <div class="faceboookFotos">
+                                <iframe
+                                    src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fpt-br.facebook.com%2Ffanimetais&tabs=timeline&width=500&height=120&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                                    height="120" style="border:none;overflow:hidden;width: 100%;"></iframe>
+                            </div>
+                        </div>
+                        <div class="insta">
+                            <h3>Pinterest @metaisfani</h3>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="padding newslatter">
+            <div class="cont flex">
+                <h2>RECEBA NOVIDADES</h2>
+                <form id="News" name="Newslatters" class="wrap" action="#" method="post">
+                    <input type="text" name="nome" placeholder="Nome" class="required nome">
+                    <input type="text" name="email" placeholder="E-mail" class="required email">
+                    <button class="enviar" type="submit" id="SendNewslatters">ENVIAR</button>
+                </form>
+            </div>
+        </div>
+
+
+    <footer>
+        <div class="cont flex">
+            <div class="tel-footer">
+                <a href="tel:+551135951100"><strong>ATENDIMENTO</strong> 11 3595.1100</a>
+            </div>
+            <div class="menu-footer">
+                <ul class="listaMenu flex">
+                    <li><a href="https://www.fani.com.br/privacidade">Política de privacidade Fani Metais</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="direitos_site">
+            <div class="cont">
+                <div class="redes-sociais">
+                    <a target="_blank" href="https://www.instagram.com/fanimetais"><i class="fa fa-instagram"></i></a>
+                    <a target="_blank" href="https://pt-br.facebook.com/fanimetais"><i class="fa fa-facebook"></i></a>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCrJUR03rU1Z7hXfjCdn_HBA"><i
+                            class="fa fa-youtube-play"></i></a>
+                    <a target="_blank" href="https://br.pinterest.com/metaisfani/"><i class="fa fa-pinterest"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/fanimetais"><i
+                            class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
+<!--
+
+
+<div class="catalogo cont padding">
+    <h2 class="titulo center padding">CATÁLOGOS</h2>
+    <div class="ListaCatalogo">
+        <div class="card-group ">
+            <div class="card " style="width: 18rem;">
+                <img class="card-img-top p-3" style="height: 24rem;" src="images/banheiro.jpg" alt="Imagem de capa do card">
+                <div class="card-body p-0">
+                  <a href="#" class="btn btn-catalogo" style="width: 100%">VER CATÁLOGO</a>
+                </div>
+              </div><div class="card" style="width: 18rem;">
+                <img class="card-img-top p-3" style="height: 24rem;" src="images/banheiro2.jpg" alt="Imagem de capa do card">
+                <div class="card-body p-0">
+                    <a href="#" class="btn btn-catalogo" style="width: 100%">VER CATÁLOGO</a>
+                </div>
+              </div><div class="card" style="width: 18rem;">
+                <img class="card-img-top p-3"style="height: 24rem;" src="images/banheiro.jpg" alt="Imagem de capa do card">
+                <div class="card-body p-0">
+                    <a href="#" class="btn btn-catalogo" style="width: 100%" >VER CATÁLOGO</a>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+-->
